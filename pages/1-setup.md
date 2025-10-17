@@ -422,3 +422,37 @@ func main() {
     }
 }
 ```
+
+---
+layout: statement
+---
+
+Let's understand how the code works
+
+---
+
+```go{all|6,7|9,22|9-22|6,7,10,11,16,17|21|all}
+package main
+
+import "fmt"
+
+func main() {
+    var width, height int
+    fmt.Scan(&width, &height)
+    
+    for {
+        var myMatter, oppMatter int
+        fmt.Scan(&myMatter, &oppMatter)
+        
+        for i := 0; i < height; i++ {
+            for j := 0; j < width; j++ {
+                // owner: 1 = me, 0 = foe, -1 = neutral
+                var scrapAmount, owner, units, recycler, canBuild, canSpawn, inRangeOfRecycler int
+                fmt.Scan(&scrapAmount, &owner, &units, &recycler, &canBuild, &canSpawn, &inRangeOfRecycler)
+            }
+        }
+        // fmt.Fprintln(os.Stderr, "Debug messages...")
+        fmt.Println("WAIT") // Write action to stdout
+    }
+}
+```

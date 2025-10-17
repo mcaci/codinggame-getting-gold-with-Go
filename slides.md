@@ -62,26 +62,21 @@ hide: false
 ---
 
 ---
-src: ./pages/2-first-run.md
+src: ./pages/2-tidy-up.md
 hide: false
 ---
 
 ---
-src: ./pages/3-tidy-up.md
+src: ./pages/3-going-silver.md
 hide: false
 ---
 
 ---
-src: ./pages/4-going-silver.md
+src: ./pages/4-going-gold.md
 hide: false
 ---
 
 ---
-src: ./pages/5-going-gold.md
-hide: false
----
-
----
-src: ./pages/6-end.md
+src: ./pages/5-end.md
 hide: false
 ---
