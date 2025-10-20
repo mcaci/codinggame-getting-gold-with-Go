@@ -1,13 +1,13 @@
 # Presenting myself
 
-- I'm Michele Caci \<pause\> I work with the logging team in amadeus \<pause\>
+- My name is Michele Caci \<pause\> I use Go at Amadeus to help deploy and operate the logging infrastructure \<pause\>
 
 ---
 
 # The objective of this tutorial
 
 - And in this tutorial
-- I will use Go to get to the Gold tier of a CodingGame Bot Programming challenge
+- I will show you 10 tips to shine in a CodingGame Bot Programming challenge when using Go
 
 ---
 
@@ -34,4 +34,4 @@
 - [pkg.go.dev](https://pkg.go.dev)
   - Go's code documentation
 - A [CodingGame](https://www.codingame.com/multiplayer/bot-programming) challenge
-  - I'm going to use the 2022 Challenge: [Keep off the Grass](https://www.codingame.com/ide/puzzle/keep-off-the-grass-fall-challenge-2022)
+  - I'm going to use the 2024 Challenge: [Cellularena](https://www.codingame.com/ide/puzzle/winter-challenge-2024)

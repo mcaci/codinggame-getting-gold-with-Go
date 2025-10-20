@@ -4,9 +4,9 @@ theme: seriph
 # background image
 background: /images/golangDarkBG.png
 # some information about your slides (markdown enabled)
-title: Master Go(ld) for CodingGame 
+title: 10 Tips to Shine with CodingGame in Go
 info: |
-  ## Introduction to Go in the CodingGame context
+  ## 10 Tips to Shine with CodingGame in Go
   Tips and tricks to setup your project faster
   And concentrate on the solution rather than on the issues of managing the code
 # apply unocss classes to the current slide
@@ -24,7 +24,7 @@ exportFilename: goCodingGame
 #  ogImage: https://cover.sli.dev
 ---
 
-# Master Go(ld) in CodingGame 
+# 10 Tips to Shine with CodingGame in Go
 
 <div class="absolute bottom-10 text-left">
     <div>Michele Caci</div>
@@ -57,26 +57,34 @@ hide: false
 ---
 
 ---
-src: ./pages/1-setup.md
+src: ./pages/tip-01.md
 hide: false
 ---
-
 ---
-src: ./pages/2-tidy-up.md
+src: ./pages/tip-02.md
 hide: false
 ---
-
 ---
-src: ./pages/3-going-silver.md
+src: ./pages/tip-03.md
 hide: false
 ---
-
 ---
-src: ./pages/4-going-gold.md
+src: ./pages/tip-04.md
 hide: false
 ---
-
 ---
-src: ./pages/5-end.md
+src: ./pages/tip-05.md
+hide: false
+---
+---
+src: ./pages/tip-06.md
+hide: false
+---
+---
+src: ./pages/tip-07.md
+hide: false
+---
+---
+src: ./pages/tip-08.md
 hide: false
 ---
