@@ -52,7 +52,7 @@ exportFilename: goCodingGame
 <img src="/images/go-logo-blue.svg" class="absolute bottom-10 right-10 text-right"/>
 
 ---
-src: ./pages/0-intro.md
+src: ./pages/intro.md
 hide: false
 ---
 
@@ -86,5 +86,13 @@ hide: false
 ---
 ---
 src: ./pages/tip-08.md
+hide: false
+---
+---
+src: ./pages/tip-09.md
+hide: false
+---
+---
+src: ./pages/tip-10.md
 hide: false
 ---

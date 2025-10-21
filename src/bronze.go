@@ -8,14 +8,6 @@ import (
 )
 
 func BronzeAction(entities []EntityInfo, g Grid, myStock, oppStock ProteinStock, r EntityInfo) string {
-	// action, err := FirstSporeAction(entities, g)
-	// if err == nil {
-	// 	return action
-	// }
-	// action, err = OneRootSpawnAction(entities, g)
-	// if err == nil {
-	// 	return action
-	// }
 	action, err := LookupFirstAProteinAction(entities, g)
 	if err == nil {
 		return action

@@ -7,35 +7,35 @@ package main
 // 	"sort"
 // )
 
-// func Wood3Action(g Grid, entities []EntityInfo, myStock, oppStock ProteinStock) string {
-// 	ps := FreeProteins(entities, g)
-// 	r := MyRootCell(entities)
-// 	if len(ps) == 0 {
-// 		x, y := EmptyCell(g, entities)
-// 		return fmt.Sprintf("GROW %d %d %d %s", r.organId, x, y, "BASIC")
-// 	}
-// 	sort.Slice(ps, func(i, j int) bool {
-// 		return Distance(r, ps[i]) < Distance(r, ps[j])
-// 	})
-// 	mine := MyCells(entities)
-// 	for _, p := range ps {
-// 		sort.Slice(mine, func(i, j int) bool {
-// 			return Distance(p, mine[i]) < Distance(p, mine[j])
-// 		})
-// 		d := Distance(p, mine[0])
-// 		switch {
-// 		case d <= 1:
-// 			continue
-// 		case d <= 2:
-// 			c, dir := CellToBuild(mine[0], p, entities, g)
-// 			return fmt.Sprintf("GROW %d %d %d %s %s", mine[0].organId, c.x, c.y, "HARVESTER", dir)
-// 		default:
-// 			x, y := EmptyCell(g, entities)
-// 			return fmt.Sprintf("GROW %d %d %d %s", r.organId, x, y, "BASIC")
-// 		}
-// 	}
-// 	return "WAIT"
-// }
+func Wood3Action(g Grid, entities []EntityInfo, myStock, oppStock ProteinStock) string {
+	ps := FreeProteins(entities, g)
+	r := MyRootCell(entities)
+	if len(ps) == 0 {
+		x, y := EmptyCell(g, entities)
+		return fmt.Sprintf("GROW %d %d %d %s", r.organId, x, y, "BASIC")
+	}
+	sort.Slice(ps, func(i, j int) bool {
+		return Distance(r, ps[i]) < Distance(r, ps[j])
+	})
+	mine := MyCells(entities)
+	for _, p := range ps {
+		sort.Slice(mine, func(i, j int) bool {
+			return Distance(p, mine[i]) < Distance(p, mine[j])
+		})
+		d := Distance(p, mine[0])
+		switch {
+		case d <= 1:
+			continue
+		case d <= 2:
+			c, dir := CellToBuild(mine[0], p, entities, g)
+			return fmt.Sprintf("GROW %d %d %d %s %s", mine[0].organId, c.x, c.y, "HARVESTER", dir)
+		default:
+			x, y := EmptyCell(g, entities)
+			return fmt.Sprintf("GROW %d %d %d %s", r.organId, x, y, "BASIC")
+		}
+	}
+	return "WAIT"
+}
 
 // func MyCells(entities []EntityInfo) []EntityInfo {
 // 	var cells []EntityInfo

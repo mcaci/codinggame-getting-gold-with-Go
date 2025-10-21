@@ -7,11 +7,26 @@ Tip #3
 Organize your Go project
 
 ---
+layout: center
+---
 
-Coding game works by using one file
+A CodingGame challenge source code is located in a single file
 
-In Go this leads to a long unreadable file
+---
+layout: center
+---
 
-Use one pacakge per codinggame difficulty level
+Working in a single file eventually leads to a long unreadable file
 
-Split files when necessary
+---
+
+# Tips to organize your Go project
+
+1. Use one pacakge per CodingGame difficulty level
+2. Split files when necessary
+
+---
+layout: lblue-fact
+---
+
+Let's see it in the editor

@@ -10,7 +10,7 @@ Use your own IDE
 layout: center
 ---
 
-It gives more freedom than the IDE from coding game
+It gives more freedom than the IDE from CodingGame
 
 ---
 layout: center

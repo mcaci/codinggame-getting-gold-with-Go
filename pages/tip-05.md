@@ -7,8 +7,10 @@ Tip #5
 Use functions as filters for your lists
 
 ---
+layout: center
+---
 
-You often find yourselves in a situation like
+# A common situation
 
 > I need a list of my elements
 
@@ -18,14 +20,25 @@ You often find yourselves in a situation like
 
 These are 3 different functions that produce a list of the same type but with different criterias
 
+---
+layout: center
+---
+
 Use functions as the filters and you'll change all functions producing the same list to one function that produces the list and all of the others deciding which filter needs to be applied
 
-## Tip #5.1
+---
+layout: center
+---
 
-Do not create any common pacakges
+# Bonus Tips
 
-Every level should have its own strategy and the minimun code to make it work
+1. Do not create any common pacakges
+2. Every level should have its own strategy and the minimun code to make it work
+3. When you need some code from the previous difficulty level, copy and paste it
+4. Leave your code open to modification
 
-When you need some code from the previous difficulty level, copy and paste it
+---
+layout: lblue-fact
+---
 
-You'll leave it open to modification should you need to update the code for the current level
+Let's see it in the editor

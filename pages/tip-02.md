@@ -12,7 +12,7 @@ Work on your variables
 layout: center
 ---
 
-Coding game works with many variables as inputs
+CodingGame works with many variables as inputs
 
 ---
 
@@ -52,7 +52,7 @@ Coding game works with many variables as inputs
 layout: center
 ---
 
-This is unreadable
+This code is unreadable
 
 ---
 layout: center
@@ -64,7 +64,12 @@ Working on this version of the code will make it more complex and unreadable
 layout: center
 ---
 
-Create custom types to help organize the code to make it more readable and manageable
+Create custom types to better organize the code and make it more readable and manageable
+
+<!-- 
+Keep the code from CodingGame that reads the input but work on the variables of these custom types you create 
+- Create functions and variables that use those types
+ -->
 
 ---
 layout: lblue-fact
