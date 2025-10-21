@@ -1,13 +1,13 @@
 # Presenting myself
 
-- My name is Michele Caci \<pause\> I use Go at Amadeus to help deploy and operate the logging infrastructure \<pause\>
+- My name is Michele Caci
+- I use Go at Amadeus to help deploy and operate the logging infrastructure
 
 ---
 
-# The objective of this tutorial
+# The objective
 
-- And in this tutorial
-- I will show you 10 tips to shine in a CodingGame Bot Programming challenge when using Go
+- In this video I will show you 10 tips to shine in a CodingGame Bot Programming challenge when using Go
 
 ---
 
@@ -23,6 +23,8 @@
 3. Readability
     - code formatted in the same way which makes it easy to read and update
 
+---
+hide: true
 ---
 
 # What tools are we going to use?

@@ -4,12 +4,70 @@ layout: lblue-fact
 
 Tip #2
 
-Work on your own types and variables
+Create your own types
 
+Work on your variables
+
+---
+layout: center
 ---
 
 Coding game works with many variables as inputs
 
-This leads to complicated functions with lots of parameters
+---
 
-Use custom types and own function to be able to access them more easily
+```go
+// ...
+        for i := 0; i < entityCount; i++ {
+            // x, y: grid coordinate
+            // _type: WALL, ROOT, BASIC, TENTACLE, HARVESTER, SPORER, A, B, C, D
+            // owner: 1 if your organ, 0 if enemy organ, -1 if neither
+            // organId: id of this entity if it's an organ, 0 otherwise
+            // organDir: N,E,S,W or X if not an organ
+            var x, y int
+            var _type string
+            var owner, organId int
+            var organDir string
+            var organParentId, organRootId int
+            fmt.Scan(&x, &y, &_type, &owner, &organId, &organDir, &organParentId, &organRootId)
+        }
+        // myD: your protein stock
+        var myA, myB, myC, myD int
+        fmt.Scan(&myA, &myB, &myC, &myD)
+        // oppD: opponent's protein stock
+        var oppA, oppB, oppC, oppD int
+        fmt.Scan(&oppA, &oppB, &oppC, &oppD)
+        // requiredActionsCount: your number of organisms, output an action for each one in any order
+        var requiredActionsCount int
+        fmt.Scan(&requiredActionsCount)
+        for i := 0; i < requiredActionsCount; i++ {
+            // fmt.Fprintln(os.Stderr, "Debug messages...")
+            fmt.Println("WAIT")// Write action to stdout
+        }
+    }
+}
+```
+
+---
+layout: center
+---
+
+This is unreadable
+
+---
+layout: center
+---
+
+Working on this version of the code will make it more complex and unreadable
+
+---
+layout: center
+---
+
+Create custom types to help organize the code to make it more readable and manageable
+
+---
+layout: lblue-fact
+---
+
+Let's see it in the editor
