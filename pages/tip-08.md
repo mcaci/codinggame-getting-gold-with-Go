@@ -34,4 +34,4 @@ The next tip ties in nicely because it aims to reduce the impact of the GC
 layout: lblue-fact
 ---
 
-Let's see it in the editor
+Let's go to the editor

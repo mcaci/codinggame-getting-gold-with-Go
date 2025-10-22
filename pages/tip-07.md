@@ -10,23 +10,16 @@ When in doubt, log
 layout: center
 ---
 
-Logging is your way to find bugs or simply explain what was not clear
+Logging is your way to find bugs or explain an unclear action
 
 ---
 layout: center
----
-
-Log usually happens with `log` and `slog` packages
-
----
-layout: center
+class: text-center
 ---
 
 In CodingGame you log by printing to stderr with
 
 `fmt.Fprintln(os.Stderr, "Message")`
-
-or 
 
 `fmt.Fprintf(os.Stderr, "Message: %s\n", message)`
 
@@ -34,10 +27,8 @@ or
 layout: center
 ---
 
+# Summary
+
 Space reserved for reading logs is not huge, remember to clean them up and keep only the information
 
----
-layout: lblue-fact
----
-
-Let's see it in the editor
+Append text after any command and that text will appear above your organism.

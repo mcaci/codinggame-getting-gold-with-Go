@@ -39,4 +39,4 @@ The code in CodingGame is only yours, work on concrete types
 layout: lblue-fact
 ---
 
-Let's see it in the editor
+Let's go to the editor

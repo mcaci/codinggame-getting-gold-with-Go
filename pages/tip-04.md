@@ -4,103 +4,38 @@ layout: lblue-fact
 
 Tip #4
 
-Make your strategy easily readable
+Organize your Go project
 
 ---
 layout: center
 ---
 
-An unreadable strategy is difficult to understand and adapt
+The code for a CodingGame challenge is located in a single file
 
 ---
 layout: center
 ---
 
-```go
-func Wood4Action(g Grid, entities []EntityInfo, myStock, oppStock ProteinStock) string {
-	ps := Proteins(entities)
-	if len(ps) == 0 {
-		return "WAIT"
-	}
-	r := MyRootCell(entities)
-	sort.Slice(ps, func(i, j int) bool {
-		return Distance(r, ps[i]) < Distance(r, ps[j])
-	})
-	p := ps[0]
-	return fmt.Sprintf("GROW %d %d %d %s", r.organId, p.x, p.y, "BASIC")
-}
-```
-
----
-layout: center
----
-
-```go
-func Wood3Action(g Grid, entities []EntityInfo, myStock, oppStock ProteinStock) string {
-	ps := FreeProteins(entities, g)
-	r := MyRootCell(entities)
-	if len(ps) == 0 {
-		x, y := EmptyCell(g, entities)
-		return fmt.Sprintf("GROW %d %d %d %s", r.organId, x, y, "BASIC")
-	}
-	sort.Slice(ps, func(i, j int) bool {
-		return Distance(r, ps[i]) < Distance(r, ps[j])
-	})
-	mine := MyCells(entities)
-	for _, p := range ps {
-		sort.Slice(mine, func(i, j int) bool {
-			return Distance(p, mine[i]) < Distance(p, mine[j])
-		})
-		d := Distance(p, mine[0])
-		switch {
-		case d <= 1:
-			continue
-		case d <= 2:
-			c, dir := CellToBuild(mine[0], p, entities, g)
-			return fmt.Sprintf("GROW %d %d %d %s %s", mine[0].organId, c.x, c.y, "HARVESTER", dir)
-		default:
-			x, y := EmptyCell(g, entities)
-			return fmt.Sprintf("GROW %d %d %d %s", r.organId, x, y, "BASIC")
-		}
-	}
-	return "WAIT"
-}
-```
-
----
-layout: center
----
-
-```go
-func BronzeAction(entities []EntityInfo, g Grid, myStock, oppStock ProteinStock, r EntityInfo) string {
-	action, err := LookupFirstAProteinAction(entities, g)
-	if err == nil {
-		return action
-	}
-	action, err = LookupOpponentRoot(entities, g, r, myStock)
-	if err == nil {
-		return action
-	}
-	action, err = LookupFreeCells(entities, g, r, myStock)
-	if err == nil {
-		return action
-	}
-	return "WAIT"
-}
-```
-
----
-
-# How can I make my strategy more readable?
-
-- Use function with names that explain the strategy
-- Return an error to indicate that the strategy did not produce a valid result
-- Fallback to `"WAIT"` action if no strategy works
-- A "WAIT" action is better than no action
-  - If you don't provide an action when neededyou lose game
+Working in a single file eventually leads to long unreadable code
 
 ---
 layout: lblue-fact
 ---
 
-Let's see it in the editor
+Let's go to the editor
+
+---
+
+# Summary
+
+1. Use one pacakge per CodingGame difficulty level
+2. Split code in different files when they get too long
+3. Remember to aggregate all the code in one file before submitting into the arena
+
+<br/>
+
+### Bonus Tips
+
+1. Do not create any common pacakges
+2. Every difficulty level should keep the code for its own strategy
+3. Copy and paste it common code across difficulty level when needed

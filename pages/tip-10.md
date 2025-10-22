@@ -28,4 +28,4 @@ You'll leave it open to modification should you need to update the code for the 
 layout: lblue-fact
 ---
 
-Let's see it in the editor
+Let's go to the editor

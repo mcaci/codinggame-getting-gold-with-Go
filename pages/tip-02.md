@@ -58,21 +58,41 @@ This code is unreadable
 layout: center
 ---
 
-Working on this version of the code will make it more complex and unreadable
-
----
-layout: center
----
-
-Create custom types to better organize the code and make it more readable and manageable
-
-<!-- 
-Keep the code from CodingGame that reads the input but work on the variables of these custom types you create 
-- Create functions and variables that use those types
- -->
+Working it will make it more complex and unreadable
 
 ---
 layout: lblue-fact
 ---
 
-Let's see it in the editor
+Let's go to the editor
+
+---
+
+# Summary 
+
+### Create custom types
+
+```go
+type MyType struct {
+    n int
+    s string
+    // ... other fields
+}
+```
+
+<br/>
+
+### Getting the code from CodingGame
+
+```go
+type MyType struct {
+    n int
+    s string
+    // ... other fields
+}
+```
+
+<!-- 
+Keep the code from CodingGame that reads the input but work on the variables of these custom types you create 
+- Create functions and variables that use those types
+ -->
