@@ -10,22 +10,36 @@ Verify your code with unit tests
 layout: center
 ---
 
-Every level should have its own strategy and the minimun code to make it work
+In the CodingGame context it is easy to skip unit tests especially if you want to go fast
 
 ---
 layout: center
 ---
 
-When you need some code from the previous difficulty level, copy and paste it
-
----
-layout: center
----
-
-You'll leave it open to modification should you need to update the code for the current level
+But even little tests help you minimize the risks of unexpected behaviours
 
 ---
 layout: lblue-fact
 ---
 
 Let's go to the editor
+
+---
+
+# Summary
+
+- Here is how to create a unit test
+
+```go
+// sum.go 
+func Sum(a, b int) int { return a+b }
+
+// sum_test.go
+func TestSum(t *testing.T) {
+    c := Sum(1, 2)
+    if c != 3 {
+        t.Error("Unexpected value for sum")
+    }
+}
+
+```

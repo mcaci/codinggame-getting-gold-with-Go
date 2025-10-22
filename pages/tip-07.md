@@ -13,22 +13,25 @@ layout: center
 Logging is your way to find bugs or explain an unclear action
 
 ---
-layout: center
-class: text-center
+layout: lblue-fact
 ---
 
-In CodingGame you log by printing to stderr with
+Let's go to the arena
 
-`fmt.Fprintln(os.Stderr, "Message")`
-
-`fmt.Fprintf(os.Stderr, "Message: %s\n", message)`
-
----
-layout: center
 ---
 
 # Summary
 
-Space reserved for reading logs is not huge, remember to clean them up and keep only the information
+1. Create log lines by printing to stderr with
+    - `fmt.Fprintln(os.Stderr, "Message")`
+    - `fmt.Fprintf(os.Stderr, "Message: %s\n", message)`
+2. Create short messages on game entities by appending text after a command
+    - `fmt.Println("action", "message")`
 
-Append text after any command and that text will appear above your organism.
+<br/>
+
+### Caution
+
+- Space for logs in the arena is small
+  - Clean your logs regularly
+- Logging in real world applications is done with `log` and `slog` packages

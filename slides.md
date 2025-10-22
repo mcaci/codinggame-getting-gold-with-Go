@@ -96,3 +96,7 @@ hide: false
 src: ./pages/tip-10.md
 hide: false
 ---
+---
+src: ./pages/end.md
+hide: false
+---
