@@ -82,17 +82,14 @@ type MyType struct {
 
 <br/>
 
-### Getting the code from CodingGame
+### Create functions and variables that use those types
 
 ```go
-type MyType struct {
-    n int
-    s string
-    // ... other fields
+func Use(t MyType) {
+    // ... your own logic here
 }
 ```
 
 <!-- 
 Keep the code from CodingGame that reads the input but work on the variables of these custom types you create 
-- Create functions and variables that use those types
  -->

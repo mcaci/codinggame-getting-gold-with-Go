@@ -38,12 +38,6 @@ layout: lblue-fact
 Let's go to the editor
 
 ---
-layout: center
----
-
-Use functions as the filters and you'll change all functions producing the same list to one function that produces the list and all of the others deciding which filter needs to be applied
-
----
 
 # Summary
 

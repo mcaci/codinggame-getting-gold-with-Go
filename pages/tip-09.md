@@ -20,9 +20,9 @@ However you should switch to concrete values for a few reasons
 
 ---
 
-# Two reasons
+# Here are the reasons
 
-1. nil dereference runtime panic
+1. `nil` dereference runtime panic
     - another common reason for losing a game
 2. Concrete values are allocated in the stack, pointers in the heap
     - less Garbage Collector calls for improved performances
@@ -41,4 +41,4 @@ However you should switch to concrete values for a few reasons
 layout: center
 ---
 
-The code in CodingGame is only yours, work on concrete values and types 
+The code in CodingGame is only yours, work on concrete values and types
